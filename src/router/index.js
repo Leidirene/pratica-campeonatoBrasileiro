@@ -1,27 +1,27 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import MeuInicio from '../views/MeuInicio.vue'
-import ListaClassificacao from '../views/ListaClassificacao'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import MeuInicio from "../views/MeuInicio.vue";
+import ListaClassificacao from "../views/ListaClassificacao";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'MeuInicio',
-    component: MeuInicio
+    path: "/",
+    name: "MeuInicio",
+    component: MeuInicio,
   },
   {
-    path: '/ListaClassificacao',
-    name: 'ListaClassificacao',
+    path: "/ListaClassificacao",
+    name: "ListaClassificacao",
     component: ListaClassificacao,
   },
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

@@ -1,31 +1,21 @@
 <template>
-<v-simple-table
-    fixed-header
-    height="300px"
-  >
+  <v-simple-table fixed-header height="300px">
     <template v-slot:default>
       <thead>
         <tr>
-          <th colspan="2" class="text-left">
-            Clube
-          </th>
-          <th class="text-left">
-            Pontos
-          </th>
+          <th colspan="2" class="text-left">Clube</th>
+          <th class="text-left">Pontos</th>
         </tr>
       </thead>
       <tbody>
-        <tr
-          v-for="(clube, index) in clubes"
-          :key="clube.id"
-        >
-        <td>{{ index + 1}}</td>
+        <tr v-for="(clube, index) in clubes" :key="clube.id">
+          <td>{{ index + 1 }}</td>
           <td>
-               <v-avatar size="20"> 
-                <img :src="clube.escudo" :alt="clube.nome">
-               </v-avatar>
-               <span class="pl-2"> {{ clube.nome }} </span>
-        </td>
+            <v-avatar size="20">
+              <img :src="clube.escudo" :alt="clube.nome" />
+            </v-avatar>
+            <span class="pl-2"> {{ clube.nome }} </span>
+          </td>
           <td>{{ clube.pontos }}</td>
         </tr>
       </tbody>
@@ -35,16 +25,14 @@
 
 <script>
 export default {
-    name: 'ClubesLista',
-    props:{
-        clubes: {
-            type: Array,
-            required: true
-        }
-    }
-}
+  name: "ClubesLista",
+  props: {
+    clubes: {
+      type: Array,
+      required: true,
+    },
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
