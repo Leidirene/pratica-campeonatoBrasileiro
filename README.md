@@ -1,5 +1,8 @@
 # campeonato-brasileiro
-
+  Treinamento realizado para o **Hackathon Decola 🚀🧡 Iteris.**
+  - Nome do projeto: Campeonato Brasileiro.
+  - Objetivo: Criação de duas telas em Vue.js exibindo dados falsos do Campeonato Brasileiro 2020.
+  
 ## Project setup
 ```
 npm install
